@@ -93,9 +93,11 @@ void loop()
 
 
 ## OUTPUT:
-![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/8a76c4a5-f2bf-4981-95da-368758646a8e)
-![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/8f472859-e846-478c-9f8e-3428d7b7bfef)
+### OFF Status:
+![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/c5cfe917-53ef-468f-9555-7ad70a7f7add)
 
+### ON Status:
+![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/742ce14d-6112-4fd8-a92e-f1954d71bad9)
 
 
 ## RESULT:
