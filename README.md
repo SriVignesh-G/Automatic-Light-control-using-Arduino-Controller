@@ -1,4 +1,6 @@
 # Automatic Light Controller using LDR and Arduino UNO controller.
+## Name: Sri Vignesh G
+## Reg No: 212223040204
 
 ##  AIM:
 
@@ -53,20 +55,48 @@ Overall, this circuit diagram showcases how the Arduino, LDR, ADC, relay, and tr
 
 
 
-
-
-
-
 LDR Features of LDR are as follows: 
 
 1. High reliability. 2. Light weight. 3. Wide spectral response. 4. Wide ambient temperature range.
 
 
 ## PROGRAM:
+```
+int sensorPin = A0; 
+int sensorValue = 0; 
+void setup() 
+{
+Serial.begin(9600); 
+pinMode(13, OUTPUT);
+}
+void loop() 
+{
+  sensorValue = analogRead(sensorPin);
+  Serial.print("OUTPUT:");
+  Serial.println(sensorValue); 
+  delay(500);
+  if(sensorValue<=400)
+  {
+  digitalWrite(13, HIGH);  
+  delay(500);
+  }
+  else
+  {
+  digitalWrite(13, LOW);  
+  delay(500);
+  }
+}
+```
 
 ## CIRCUIT DIAGRAM:
+![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/ba46b375-ca21-4095-8826-315b2049b232)
+
 
 ## OUTPUT:
+![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/8a76c4a5-f2bf-4981-95da-368758646a8e)
+![image](https://github.com/SriVignesh-G/Automatic-Light-control-using-Arduino-Controller/assets/147576510/8f472859-e846-478c-9f8e-3428d7b7bfef)
+
+
 
 ## RESULT:
 Thus the automatic light controller was designed and simulated using LDR and Arduino UNO controller.
